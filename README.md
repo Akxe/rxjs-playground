@@ -1,9 +1,9 @@
 ### Custom DTS files with TypeScript Sandbox
 
-<img src="./ex.png">
+This project was heavily inspired by https://github.com/orta/octokit-playground project! Most if not all credit goes to him 😊
 
 
-1. `scripts/makeDTSObj.mjs` - Recursively grabs all the @octokit/* files and puts them into a single JSON file which the browser can read
+1. `scripts/makeDTSObj.mjs` - Recursively grabs all the rxjs/* files and puts them into a single JSON file which the browser can read
 
 2. `index.html` - Differences from the demo code [on the site](https://www.typescriptlang.org/dev/sandbox/)
     - Uses `script:module` to pull in the JSON above
@@ -16,4 +16,3 @@
           sb.languageServiceDefaults.addExtraLib( dts[path], "file:///" + path);
         });
        ```
-    

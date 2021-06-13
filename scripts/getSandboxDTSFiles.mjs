@@ -8,6 +8,7 @@ import nodeFetch from "node-fetch"
 import { writeFileSync, existsSync, mkdirSync } from "fs"
 import { join, dirname } from "path"
 
+// @ts-ignore
 const moduleURL = new URL(import.meta.url);
 const __dirname = dirname(moduleURL.pathname);
 
